@@ -1,0 +1,80 @@
+<div id="page-container">
+  <div id="content-wrap">
+    <%- include("partials/header") -%>
+  </div>
+
+<div class="row">
+  <div class="col-2">
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action">Resister</a>
+      <a href="capacitor" class="list-group-item list-group-item-action">Capacitor</a>
+      <a href="inductor" class="list-group-item list-group-item-action">Inductor</a>
+      <!-- Add more menu items as needed -->
+    </div>
+  </div>
+
+    <div class="col-10">
+  <div class="row d-flex">
+    <div class="display:block card col-6 shadow-lg p-3 mb-5 bg-body-tertiary rounded mt-1 ">
+      <div class="card-body">
+        <h5 class="card-title">Resistor</h5>
+        It resists the flow of current, hence the name "resistor." Think of it as the gatekeeper, controlling the
+        electron traffic to ensure everything runs smoothly. <br>
+        <u>Resistance</u> is the measure of how much a material or device opposes the flow of electric current. <br>
+        <br>
+        <p>\( R = \frac{\rho \cdot L}{A} \)</p>
+        R = resistance, ρ = resistivity, L = length, A = area
+      </div>
+    </div>
+  </div>
+
+  <div class="row d-flex">
+    <div class="display:block card col-6 shadow-lg p-3 mb-5 bg-body-tertiary rounded mt-1 ">
+      <div class="card-body">
+        <h5 class="card-title">Series Combination</h5>  
+        <img src="series.PNG" width="200">
+        <p>\( R_{\text{eff}} = R_1 + R_2 + R_3 \)</p>
+        <p>\( R_{\text{eff}} = 300 ohms\)</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row d-flex">
+    <div class="display:block card col-6 shadow-lg p-3 mb-5 bg-body-tertiary rounded mt-1 ">
+      <div class="card-body">
+        <h5 class="card-title">parallel Combination</h5>  
+        <img src="parallel.PNG" width="200">
+        <p>\( R_{\text{eff}} = \frac{1}{{\frac{1}{{R_1}} + \frac{1}{{R_2}} + \frac{1}{{R_3}}}} \)</p>
+        <p>\( R_{\text{eff}} = 33.33ohms\)</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row d-flex">
+    <div class="display:block card col-6 shadow-lg p-3 mb-5 bg-body-tertiary rounded mt-1 ">
+      <div class="card-body">
+        <h5 class="card-title">Pro Tip</h5>  
+        <p>In PSU exams like HAL, BARC a question can be expected on colour coding of resistors</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row d-flex">
+    <div class="display:block card col-6 shadow-lg p-3 mb-5 bg-body-tertiary rounded mt-1 ">
+      <div class="card-body">
+        <h5 class="card-title">Need to know</h5>  
+        <p>Find the \( R_{\text{eff}}\) for below</p>
+        <img src="P1.PNG" width="300"/>
+        <p>Similar question was asked in ISRO ICRB Scientist-EC exam</p>
+        <p>The parallel block need not be counted, Cuz 4rth branch is shorted and current always picks path that offers lowest resistance</p>
+        <p>\( R_{\text{eff}}\) = 200 ohms</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+  <%- include("partials/footer") -%>
+
+</div>
